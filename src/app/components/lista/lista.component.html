@@ -1,0 +1,40 @@
+<mat-list>
+  
+  <!--div mat-subheader>Lista de Cursos con PROMESA</div>
+  <mat-list-item *ngFor="let curso of cursos">
+      <div mat-line>Nombre: {{ curso.nombre }}</div>      
+      <div mat-line>Curso: {{ curso.curso }}</div>
+      <div mat-line>Profesor: {{ curso.profesor }}</div>
+  </mat-list-item-->
+  
+  <!--div mat-subheader>Lista de Cursos con OBSERVABLE</div>
+  <div *ngFor="let curso of cursos">
+    <mat-card>
+      <div mat-line>Nombre: {{ curso.nombre }}</div>      
+      <div mat-line>Curso: {{ curso.curso }}</div>
+      <div mat-line>Profesor: {{ curso.profesor }}</div>
+      <mat-card-actions align="end">
+        <button mat-flat-button color="primary" (click)="abrirCursoDialog(curso)">Modificar</button>
+        <button mat-flat-button color="warn" (click)="eliminarCurso(curso.id)">Eliminar</button>
+      </mat-card-actions>
+    </mat-card>  
+  </div-->
+
+        }
+  <div mat-subheader>Lista de Cursos con JSON -><button > Filtrar por Curso 2</button></div>
+  
+  <br>
+  <div *ngFor="let dato of datos$ | async">
+    <mat-card>
+      <div mat-line>Nombre: {{ dato.nombre }}</div>      
+      <div mat-line>Curso: {{ dato.curso }}</div>
+      <div mat-line>Profesor: {{ dato.profesor }}</div>
+      <mat-card-actions align="end">
+        <button mat-flat-button color="primary" (click)="abrirCursoDialog(dato)">Modificar</button>
+        <button mat-flat-button color="warn" (click)="eliminarCurso(dato.id)">Eliminar</button>
+      </mat-card-actions>
+    </mat-card>  
+  </div>
+
+<mat-list>
+

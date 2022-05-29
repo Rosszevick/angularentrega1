@@ -1,0 +1,71 @@
+<style>
+
+  .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 0px;
+        align-items: stretch;
+        justify-content: stretch;
+        grid-template-areas: 
+        "toolbar toolbar toolbar"
+        "navbar lista lista"
+        "navbar lista lista"
+        "abmlista abmlista abmlista"
+        ;
+  }
+
+
+  .lista{
+    display: grid;
+    grid-area: lista;
+    background-color: burlywood;    
+  }   
+    
+  .navbar{
+    display: grid;
+    grid-area: navbar;
+    background-color: blanchedalmond;
+    padding-left: 10px;    
+  }     
+
+  .toolbar{
+    display: grid;
+    grid-area: toolbar;
+    background-color: aqua;    
+    padding-left: 20px;
+  }
+
+  .abmlista{
+    display: grid;
+    grid-area: abmlista;
+    background-color: burlywood;  
+    
+    padding: 25px;
+    
+    
+  }   
+
+
+</style>
+
+<!-- Toolbar -->
+<div class="container">
+
+  <app-toolbar class="toolbar"></app-toolbar>
+  <app-navbar class="navbar"></app-navbar>
+  <app-lista class="lista"></app-lista>
+  <app-abmlista class="abmlista"></app-abmlista>
+
+</div>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+

@@ -1,0 +1,32 @@
+[
+	{
+	"id": 1, "nombre": "Rodolfo", "apellido": "Fernandez", "email": "rfernandez@gmail.com", "curso": 1, "turno": "mañana", "profesor": "Profesor1"
+	},
+	{
+	"id": 2, "nombre": "Alfonso", "apellido": "Gutierrez", "email": "agutierrez@gmail.com", "curso": 1, "turno": "mañana", "profesor": "Profesor1"
+	},
+	{
+	"id": 3, "nombre": "Guillermo", "apellido": "Fernandez", "email": "gfernancez@gmail.com", "curso": 1, "turno": "mañana", "profesor": "Profesor1"
+	},
+	{
+	"id": 4, "nombre": "Ariel", "apellido": "Ramirez", "email": "arielr@gmail.com", "curso": 3, "turno": "tarde", "profesor": "Profesor2"
+	},
+	{
+	"id": 5, "nombre": "Roberto", "apellido": "Etchegaray", "email": "roberte@gmail.com", "curso": 3, "turno": "tarde", "profesor": "Profesor2"
+	},
+	{
+	"id": 6, "nombre": "Martin", "apellido": "Gonzales", "email": "mgonzales@gmail.com", "curso": 3, "turno": "tarde", "profesor": "Profesor2"
+	},
+	{
+	"id": 7, "nombre": "Federico", "apellido": "Valdez", "email": "fvaldez@gmail.com", "curso": 3, "turno": "tarde", "profesor": "Profesor2"
+	},
+	{
+	"id": 8, "nombre": "Matias", "apellido": "Ramaguffin", "email": "mrama@gmail.com", "curso": 6, "turno": "noche", "profesor": "Profesor3"
+	},
+	{
+	"id": 9, "nombre": "Hugo", "apellido": "Toledo", "email": "htoledo@gmail.com", "curso": 6, "turno": "noche", "profesor": "Profesor3"
+	},
+	{
+	"id": 10, "nombre": "Pedro", "apellido": "Castillo", "email": "pcastillo@gmail.com", "curso": 6, "turno": "noche", "profesor": "Profesor3"
+	}
+]

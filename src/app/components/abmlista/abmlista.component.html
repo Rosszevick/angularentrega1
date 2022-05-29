@@ -1,0 +1,50 @@
+<style>
+    label{
+    display: inline-block;
+    width: 100px;
+    }
+    
+    div{
+        line-height : 5px;
+    }
+</style>
+
+<h3>Carga los datos alumnos</h3>
+
+<div>
+<form [formGroup]="formularioContacto"(ngSubmit)="submit()">
+
+    <label>Nombre:</label><input class="form-control" placeholder="Nombre "type="text" formControlName="nombre">
+    <p *ngIf="formularioContacto.get('nombre')?.errors?.['required']">Falta nombre</p>
+    <br>
+    
+    <label>Apellido:</label><input class="form-control" placeholder="Apellido "type="text" formControlName="apellido">
+    <p *ngIf="formularioContacto.get('apellido')?.errors?.['required']">Falta apellido</p>
+    <br>
+
+    <label>Email:</label><input class="form-control" placeholder=" Email"type="text" formControlName="email">
+    <p *ngIf="formularioContacto.get('email')?.errors?.['email']" >Tiene que introducir una direccion de correo valida</p><br>
+    
+    <label>Curso:</label><input class="form-control" placeholder="Curso "type="number" formControlName="curso">
+    <p *ngIf="formularioContacto.get('curso')?.errors?.['required']">Indicar Nº de curso</p>
+    <br>
+
+    <label>Turno:</label><input class="form-control" placeholder="Turno "type="text" formControlName="turno">
+    <p *ngIf="formularioContacto.get('turno')?.errors?.['required']">Falta indicar el turno</p>
+    <br>
+
+    <label>Profesor:</label><input class="form-control" placeholder="Profesor "type="text" formControlName="profesor">
+    <p *ngIf="formularioContacto.get('profesor')?.errors?.['required']">Falta indicar el profesor</p>
+    <br>
+
+    <button type="submit" class="btn btn-warning">Enviar</button>
+    
+</form>
+</div>
+
+<div class="previsualizacion">
+<h3>Se vera asi:</h3>
+<p>Nombre: {{formularioContacto.get('nombre')?.value}}</p>
+<p>Email: {{formularioContacto.get('email')?.value}}</p>
+<p>Mensaje: {{formularioContacto.get('mensaje')?.value}}</p>
+</div>

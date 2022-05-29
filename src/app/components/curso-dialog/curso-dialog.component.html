@@ -1,0 +1,11 @@
+<form [formGroup]="formulario" (ngSubmit)="actualizarCurso()">
+    <mat-form-field appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Curso</mat-label>
+        <input matInput formControlName="curso">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Modificiar</button>
+</form>
